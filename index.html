@@ -1,67 +1,11 @@
 <!DOCTYPE html>
-<html lang="th">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ระบบประเมินคุณภาพร้านค้า - โรงเรียนราษฎร์วิทยา (ตี่มิ้ง)</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #1e3a8a;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
-      padding: 1rem;
-    }
-    .spinner {
-      width: 48px;
-      height: 48px;
-      border: 5px solid rgba(255, 255, 255, 0.2);
-      border-top-color: #ffffff;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin-bottom: 1.5rem;
-    }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #ffffff;
-      color: #1e3a8a;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
-    }
-  </style>
-  <script>
-    // URL ตรงของระบบ Google Apps Script
-    var targetUrl = "https://script.google.com/macros/s/AKfycby6thKrtozptzq_e6y1zKFr55bf6OQdhP-FT3-TcBXMdepe0lEXEkRk-aj6y26ObW8L/exec";
-    
-    // ถ้าเปิดใน LINE ให้เติม ?openExternalBrowser=1 เพื่อให้เปิดใน Safari/Chrome ของมือถือทันที
-    var isLine = /Line/i.test(navigator.userAgent);
-    if (isLine) {
-      targetUrl += (targetUrl.indexOf('?') === -1 ? '?' : '&') + "openExternalBrowser=1";
-    }
 
-    // ทำการ Redirect ทันที
-    window.location.replace(targetUrl);
-  </script>
-</head>
-<body>
-  <div class="spinner"></div>
-  <h2 style="margin: 0 0 0.5rem 0;">กำลังเข้าสู่ระบบประเมินร้านค้า...</h2>
-  <p style="opacity: 0.85; margin: 0;">โรงเรียนราษฎร์วิทยา (ตี่มิ้ง)</p>
-  <noscript>
-    <a href="https://script.google.com/macros/s/AKfycby6thKrtozptzq_e6y1zKFr55bf6OQdhP-FT3-TcBXMdepe0lEXEkRk-aj6y26ObW8L/exec" class="btn">คลิกเพื่อเข้าสู่ระบบ</a>
-  </noscript>
-</body>
+<html>
+   <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+      <base target="_top">
+   </head>
+   <body>
+      <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;" src="https://script.google.com/macros/s/AKfycbwKhHIhjLeQjEY1RcDci2imNOcNxdKtxD_x7RSTcSyMXO0prWz83gq1xdBK7hvwSAtd/exec"></iframe>
+   </body>
 </html>
